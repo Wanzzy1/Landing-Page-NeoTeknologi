@@ -11,7 +11,7 @@ Dibuat dengan **Bootstrap 5** dan **custom CSS**, serta warna yang disesuaikan d
 ---
 
 ## 📸 Preview
-![Preview Landing Page](assets/img/preview.png)
+![Preview Landing Page](assets/img/Preview.png)
 
 ---
 
