@@ -2,6 +2,13 @@
 
 Landing page responsif untuk Neo Teknologi, menampilkan produk, keunggulan, konsultasi, dan profil perusahaan. Dibuat dengan Bootstrap 5 dan custom CSS, serta warna yang disesuaikan dengan branding logo.
 
+## Preview
+
+![Preview 1](assets/img/Preview.png)
+![Preview 2](assets/img/preview2.png)
+![Preview 3](assets/img/preview3.png)
+
+
 ## Fitur
 - Responsive design (mobile & desktop)
 - Section produk, keunggulan, konsultasi, dan tentang kami
