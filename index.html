@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Neo Teknologi | Solusi Kebutuhan Anda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #f8f9fa;
+      }
+      .navbar {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        background: #fff !important;
+      }
+      .navbar-brand img {
+        height: 48px;
+      }
+      .nav-link {
+        font-weight: 500;
+        margin-right: 8px;
+        transition: color 0.2s;
+      }
+      .nav-link.active,
+      .nav-link:hover {
+        color: #0ea5e9 !important;
+      }
+      .background-jumbotron {
+        background-image: url(assets/img/jumbotron1.png);
+        height: 420px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.45);
+        display: flex;
+        align-items: center;
+      }
+      #jumbotron h1 {
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+      #jumbotron p {
+        color: #e0e0e0;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+      .btn-info {
+        background-color: #0ea5e9;
+        color: #fff;
+        border: none;
+        font-weight: 500;
+        padding: 10px 32px;
+        border-radius: 25px;
+        transition: background 0.2s;
+      }
+      .btn-info:hover,
+      .btn-info:focus {
+        background-color: #0369a1;
+        color: #fff;
+      }
+      .display-4 {
+        font-weight: 700;
+        color: #222;
+      }
+      .bg-blue {
+        color: #0ea5e9 !important;
+      }
+      .keunggulan-icon {
+        background: #e0f2fe;
+        border-radius: 50%;
+        padding: 18px;
+        margin-bottom: 16px;
+        color: #0ea5e9;
+        font-size: 2.2rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        border: none;
+        border-radius: 18px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+        transition: box-shadow 0.3s, transform 0.3s;
+      }
+      .card:hover {
+        box-shadow: 0 8px 32px rgba(14, 165, 233, 0.12);
+        transform: translateY(-6px) scale(1.02);
+      }
+      .card-img-top {
+        height: 220px;
+        object-fit: cover;
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+      }
+      .card-title {
+        font-weight: 600;
+        color: #0ea5e9;
+      }
+      .card-footer {
+        background: transparent;
+        border-top: none;
+      }
+      #konsultasi {
+        background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%);
+        color: #fff;
+        border-radius: 18px;
+        margin-top: 40px;
+      }
+      #konsultasi .btn-info {
+        background: #fff;
+        color: #0ea5e9;
+        font-weight: 600;
+        border-radius: 25px;
+        margin-top: 10px;
+      }
+      #konsultasi .btn-info:hover {
+        background: #e0f2fe;
+        color: #0369a1;
+      }
+      h2.display-4 {
+        position: relative;
+        margin-bottom: 32px;
+      }
+      h2.display-4:before,
+      h2.display-4:after {
+        content: "";
+        display: inline-block;
+        width: 60px;
+        height: 3px;
+        background: #0ea5e9;
+        vertical-align: middle;
+        margin: 0 18px;
+        border-radius: 2px;
+      }
+      h2.display-4:before {
+        margin-left: -70px;
+      }
+      h2.display-4:after {
+        margin-right: -70px;
+      }
+      .tentang-img {
+        height: 350px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 2px 16px rgba(14, 165, 233, 0.08);
+      }
+      .footer-social a {
+        color: #fff;
+        margin: 0 8px;
+        font-size: 1.4rem;
+        transition: color 0.2s;
+      }
+      .footer-social a:hover {
+        color: #0ea5e9 !important;
+      }
+      footer {
+        background: #18181b;
+        color: #e5e7eb;
+        font-size: 1rem;
+        letter-spacing: 0.2px;
+      }
+      @media (max-width: 767px) {
+        .background-jumbotron {
+          height: 320px;
+        }
+        .tentang-img {
+          height: 220px;
+        }
+        h2.display-4:before,
+        h2.display-4:after {
+          width: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/neo.png" alt="neomoro.com" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Beranda</a>
+            <a class="nav-link" href="#keunggulan">Keunggulan</a>
+            <a class="nav-link" href="#produk">Produk</a>
+            <a class="nav-link" href="#konsultasi">Konsultasi</a>
+            <a class="nav-link" href="#tentang-kami">Tentang Kami</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- jumbotron image -->
+    <section id="jumbotron" class="jumbotron-fluid background-jumbotron">
+      <div class="container py-5 text-center">
+        <h1 class="display-3 mb-3">Solusi Kebutuhan Anda</h1>
+        <p class="mb-4">
+          Kami menyediakan berbagai produk kebutuhan anda <br />
+          Tidak hanya indah dan berkualitas, tetapi juga bermanfaat.
+        </p>
+        <a href="#konsultasi" class="btn btn-info btn-lg shadow">Konsultasi</a>
+      </div>
+    </section>
+
+    <!-- keunggulan -->
+    <section id="keunggulan" class="container py-5">
+      <h2 class="display-4 text-center mb-5">Mengapa memilih kami?</h2>
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="text-center">
+            <span class="keunggulan-icon"><i class="fas fa-list"></i></span>
+            <h5 class="mt-3 mb-2 fw-bold">Barang Berkualitas</h5>
+            <p class="mb-0">Produk kami dipilih dan diuji secara ketat untuk memastikan kualitas terbaik bagi pelanggan.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="text-center">
+            <span class="keunggulan-icon"><i class="fas fa-shield-alt"></i></span>
+            <h5 class="mt-3 mb-2 fw-bold">Garansi 1 Tahun</h5>
+            <p class="mb-0">Setiap produk dilengkapi garansi resmi 1 tahun untuk kenyamanan dan keamanan Anda.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="text-center">
+            <span class="keunggulan-icon"><i class="fas fa-money-bill-wave"></i></span>
+            <h5 class="mt-3 mb-2 fw-bold">Harga Terjangkau</h5>
+            <p class="mb-0">Kami menawarkan harga kompetitif tanpa mengurangi kualitas produk dan layanan.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="text-center">
+            <span class="keunggulan-icon"><i class="fas fa-leaf"></i></span>
+            <h5 class="mt-3 mb-2 fw-bold">Ramah Lingkungan</h5>
+            <p class="mb-0">Produk dan proses kami mendukung keberlanjutan dan ramah lingkungan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- produk -->
+    <section id="produk" class="container py-5">
+      <h2 class="display-4 text-center mb-5">Daftar Produk</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1516724562728-afc824a36e84?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Camera" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Produk Camera</h4>
+              <p class="card-text">Kamera berkualitas tinggi untuk kebutuhan dokumentasi, vlogging, dan fotografi profesional.</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="#" class="btn btn-info"><i class="fas fa-shopping-cart"></i> Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1595044426077-d36d9236d54a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Keyboard" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Produk Keyboard</h4>
+              <p class="card-text">Keyboard ergonomis dan responsif untuk produktivitas dan gaming yang optimal.</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="#" class="btn btn-info"><i class="fas fa-shopping-cart"></i> Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1629429408209-1f912961dbd8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mouse" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Produk Mouse</h4>
+              <p class="card-text">Mouse presisi tinggi dengan desain nyaman untuk penggunaan harian maupun profesional.</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="#" class="btn btn-info"><i class="fas fa-shopping-cart"></i> Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1574494461754-de04dc403eec?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Headphone" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Produk Headphone</h4>
+              <p class="card-text">Headphone dengan suara jernih dan bass mantap untuk hiburan dan komunikasi.</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="#" class="btn btn-info"><i class="fas fa-shopping-cart"></i> Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1636487658581-a7d60d465e35?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gaming Chair" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Produk Kursi Gaming</h4>
+              <p class="card-text">Kursi gaming ergonomis untuk kenyamanan maksimal saat bermain atau bekerja lama.</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="#" class="btn btn-info"><i class="fas fa-shopping-cart"></i> Detail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1695753456538-3d29fa0a4ba0?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smartphone" class="card-img-top" />
+            <div class="card-body">
+              <h4 class="card-title">Produk Smartphone</h4>
+              <p class="card-text">Smartphone terbaru dengan fitur canggih dan performa tinggi untuk segala kebutuhan.</p>
+            </div>
+            <div class="card-footer text-end">
+              <a href="#" class="btn btn-info"><i class="fas fa-shopping-cart"></i> Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-secondary px-4 py-2 rounded-pill">Produk Lainnya</a>
+      </div>
+    </section>
+
+    <!-- konsultasi -->
+    <section id="konsultasi" class="container-fluid text-center p-5 mt-5 shadow-sm">
+      <h2 class="display-4 mb-3">Konsultasi</h2>
+      <p class="lead mb-4">Butuh bantuan? Silakan konsultasi dengan kami dengan menekan tombol di bawah ini.</p>
+      <a href="https://wa.me/6281234567890" class="btn btn-info btn-lg px-5" target="_blank"><i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp</a>
+    </section>
+
+    <!-- tentang kami -->
+    <section id="tentang-kami" class="container py-5">
+      <h2 class="display-4 text-center mb-5">Tentang Kami</h2>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+          <h3 class="fw-bold mb-3 bg-blue">Neo Teknologi</h3>
+          <p>
+            Kami adalah perusahaan teknologi yang berfokus pada solusi kebutuhan digital dan perangkat elektronik berkualitas. Dengan pengalaman dan tim profesional, kami berkomitmen memberikan produk terbaik dan layanan prima untuk Anda.
+          </p>
+          <ul class="list-unstyled mb-3">
+            <li><i class="fas fa-check-circle text-success me-2"></i>Produk Original & Bergaransi</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Layanan Konsultasi Gratis</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Pengiriman Cepat & Aman</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Dukungan Purna Jual</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <img src="assets/img/together.png" alt="tentang-kami" class="tentang-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="pt-4 pb-2 mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <span>&copy; 2025 Neo Teknologi. All rights reserved.</span>
+          </div>
+          <div class="col-md-6 text-center text-md-end footer-social">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="mailto:info@neoteknologi.com" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
